@@ -1,0 +1,19 @@
+[project]
+name = "env-item"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Štěpán Bříza", email = "stepan.birke@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.12.5",
+]
+
+[project.scripts]
+env-item = "env_item:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
