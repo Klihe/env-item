@@ -1,6 +1,6 @@
 [project]
 name = "env-item"
-version = "0.1.0"
+version = "0.1.1"
 description = "env-item is a lightweight Python package for working with environment configuration items."
 readme = "README.md"
 authors = [
