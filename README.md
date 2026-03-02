@@ -35,7 +35,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 var = EnvItem("MY_ENV_VAR").as_str()
-print(var.value)
+print(var)
 ```
 
 ### Advenced
@@ -60,14 +60,14 @@ class Config:
         KEY = EnvItem("API_KEY").required().secret().as_str()
         TIMEOUT = EnvItem("API_TIMEOUT").default(30).as_int()
 
-print(Config.DEBUG.value)
-print(Config.Database.HOST.value)
-print(Config.Database.PORT.value)
-print(Config.Database.USER.value)
-print(Config.Database.PASSWORD.value) # This will not print the value because it is marked as secret; the value is replaced with ******
-print(Config.Database.NAME.value)
-print(Config.API.KEY.value)
-print(Config.API.TIMEOUT.value)
+print(Config.DEBUG)
+print(Config.Database.HOST)
+print(Config.Database.PORT)
+print(Config.Database.USER)
+print(Config.Database.PASSWORD) # This will not print the value because it is marked as secret; the value is replaced with ******
+print(Config.Database.NAME)
+print(Config.API.KEY)
+print(Config.API.TIMEOUT)
 
 ```
 
@@ -96,17 +96,17 @@ VAR = EnvItem("MY_ENV_VAR").secret()
 #### as_str
 ```python
 VAR = EnvItem("MY_ENV_VAR").as_str()
-print(VAR.value)
+print(VAR)
 ```
 
 #### as_int
 ```python
 VAR = EnvItem("MY_ENV_VAR").as_int()
-print(VAR.value)
+print(VAR)
 ```
 
 #### as_bool
 ```python
 VAR = EnvItem("MY_ENV_VAR").as_bool()
-print(VAR.value)
+print(VAR)
 ```
