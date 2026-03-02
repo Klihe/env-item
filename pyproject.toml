@@ -1,7 +1,7 @@
 [project]
 name = "env-item"
 version = "0.1.0"
-description = "Add your description here"
+description = "env-item is a lightweight Python package for working with environment configuration items."
 readme = "README.md"
 authors = [
     { name = "Štěpán Bříza", email = "stepan.birke@gmail.com" }

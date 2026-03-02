@@ -29,7 +29,7 @@ class EnvItem:
 
         return self
 
-    def get_str(self) -> str:
+    def as_str(self) -> str:
         try:
             self.value = str(self.value)
         except Exception:  # noqa: BLE001
@@ -37,7 +37,7 @@ class EnvItem:
 
         return self.value
 
-    def get_int(self) -> int:
+    def as_int(self) -> int:
         try:
             self.value = int(self.value)
         except Exception:  # noqa: BLE001
@@ -45,7 +45,7 @@ class EnvItem:
 
         return self.value
 
-    def get_bool(self) -> bool:
+    def as_bool(self) -> bool:
         if self.value in {"True", "true"}:
             return True
         if self.value in {"False", "false"}:
